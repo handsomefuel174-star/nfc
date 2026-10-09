@@ -29,7 +29,7 @@ export function NFCScene() {
     <div className="signal-waves" aria-hidden="true"><i /><i /><i /></div>
     <motion.div className="phone" style={{ rotateZ: 12, y: reduced ? 0 : phoneY }}>
       <div className="phone-camera" /><div className="phone-status"><span>9:41</span><span>••• ▰</span></div>
-      <div className="phone-screen"><div className="phone-brand"><Logo /></div><span className="phone-welcome">BIENVENIDO A TU MUNDO</span><h3>Una conexión.<br />Mil posibilidades.</h3><div className="phone-link">Descubre nuestro menú <ArrowUpRight size={12} /></div><div className="phone-link">Déjanos una reseña <ArrowUpRight size={12} /></div><div className="phone-link">Conectemos en redes <ArrowUpRight size={12} /></div><div className="phone-connected"><Check size={12} /> Conectado al instante</div></div>
+      <div className="phone-screen"><div className="phone-brand"><Logo /></div><span className="phone-welcome">BIENVENIDO A TU MUNDO</span><h3>Una conexión.<br />Mil posibilidades.</h3><div className="phone-link">Descubre nuestro menú <ArrowUpRight size={12} /></div><div className="phone-link">Déjanos una reseña <ArrowUpRight size={12} /></div><div className="phone-link">Califica tu atención <ArrowUpRight size={12} /></div><div className="phone-connected"><Check size={12} /> Conectado al instante</div></div>
       <div className="phone-home" />
     </motion.div>
     <div className="scene-label label-card"><span className="label-line" />Diseñada para destacar.</div>

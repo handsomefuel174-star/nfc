@@ -13,7 +13,7 @@ import { OrderDialog } from "@/components/tapjr/order-dialog";
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
     { title: "TAPJR — Un toque. Todo conectado." },
-    { name: "description", content: "Tarjetas NFC personalizadas para reseñas, menús digitales y redes sociales. Conecta tu negocio con un toque. Desde $150.000 COP." },
+    { name: "description", content: "Tarjetas NFC para reseñas en caja, menús en mesas y meseros. Conecta tu negocio con un toque. Desde $150.000 COP." },
     { property: "og:title", content: "TAPJR — Un toque. Todo conectado." },
     { property: "og:description", content: "Diseño premium. Conexiones al instante. Descubre las tarjetas NFC de TAPJR para tu negocio." },
     { property: "og:type", content: "website" },
@@ -57,7 +57,7 @@ function Index() {
       <div className="intro-strip"><div className="container strip-inner"><p>Una nueva forma de conectar. <strong>Para negocios como el tuyo.</strong></p><div className="use-cases"><span><Utensils /> Restaurantes</span><span><Coffee /> Cafeterías</span><span><Store /> Tiendas</span></div></div></div>
       <section className="section container" id="servicios"><Reveal className="section-heading"><div><span className="eyebrow">CONEXIONES QUE HACEN LA DIFERENCIA</span><h2 className="section-title">Una tarjeta.<br />Muchas posibilidades.</h2></div><p>Elige cómo quieres conectar con tus clientes.<br />Nosotros hacemos que suceda.</p></Reveal><ServiceCards /></section>
       <section className="section how-section" id="como-funciona"><div className="container"><Reveal className="center-heading"><span className="eyebrow">ASÍ DE SIMPLE</span><h2 className="section-title">Tres pasos. Y estás conectado.</h2><p>Nos encargamos de la tecnología.<br />Tú te encargas de crear buenas experiencias.</p></Reveal><div className="steps-grid">{[
-        ["01", "Elige tu tarjeta", "Reseñas, menú o redes sociales. Encuentra la tarjeta que mejor se adapta a tu negocio."],
+        ["01", "Elige tu tarjeta", "Reseñas en caja, menú en mesas o tarjetas para meseros. Encuentra la tarjeta que mejor se adapta a tu negocio."],
         ["02", "La configuramos", "Personalizamos el diseño con tu marca y conectamos el enlace que tú elijas."],
         ["03", "Un toque. Listo.", "Tus clientes acercan el móvil a la tarjeta y llegan directo a tu contenido. Así de fácil."],
       ].map(([number, title, text], i) => <Reveal className="step" delay={i * .12} key={number}><div className="step-top"><span className="step-number">{number}</span><span className="step-line" /><ArrowUpRight size={17} /></div><h3>{title}</h3><p>{text}</p></Reveal>)}</div></div></section>

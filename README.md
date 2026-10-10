@@ -16,3 +16,13 @@ bun run test
 ```
 
 Precios: `src/components/tapjr/pricing.ts` · Logo: `src/components/tapjr/logo.tsx` (logo original en `public/logo-original.png`).
+
+## Versión HTML estática
+
+`html/index.html` es toda la página en **un solo archivo HTML** (CSS, JavaScript e imágenes incluidos, sin React ni dependencias). Se puede subir tal cual a cualquier hosting (Hostinger, cPanel, Netlify, GitHub Pages…) o abrir directamente en el navegador. Solo las tipografías se cargan desde Google Fonts.
+
+Para regenerarlo después de cambiar textos o estilos (requiere `bun install` y Python con Pillow):
+
+```sh
+python3 scripts/static-html/build.py . html/index.html
+```

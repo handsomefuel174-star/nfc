@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAPJR — Un toque. Todo conectado.</title>
+<meta name="description" content="Tarjetas NFC para reseñas en caja, menús en mesas y meseros. Conecta tu negocio con un toque. Precios por volumen desde 75.000 Gs por unidad en Paraguay.">
+<meta name="author" content="TAPJR">
+<meta property="og:title" content="TAPJR — Un toque. Todo conectado.">
+<meta property="og:description" content="Diseño premium. Conexiones al instante. Tarjetas NFC de TAPJR para tu negocio en Paraguay, desde 75.000 Gs por unidad.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="{{favicon}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+{{css}}
+</style>
+</head>
+<body>
+<div class="page-shell">
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" aria-label="TAPJR, inicio">{{logo}}</a>
+      <nav aria-label="Navegación principal" class="nav-links" id="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn tap-button nav-button" href="{{wa_info}}" target="_blank" rel="noopener noreferrer">Pedir ahora {{icon arrow-up-right}}</a>
+        <button type="button" class="btn btn-ghost btn-icon mobile-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links"><span class="icon-open">{{icon menu}}</span><span class="icon-close">{{icon x}}</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="reveal">
+        <div class="hero-eyebrow"><span class="status-dot"></span> PEQUEÑA TARJETA. GRANDES POSIBILIDADES.</div>
+        <h1>Un toque.<br><em>Todo conectado.</em></h1>
+        <p class="hero-description">Tu negocio, a un toque de distancia. Tarjetas NFC que conectan a tus clientes con lo que importa. Sin apps. Sin complicaciones.</p>
+        <div class="hero-actions">
+          <a class="btn tap-button" href="#servicios">Descubre tu tarjeta {{icon arrow-up-right}}</a>
+          <a class="btn btn-outline tap-button secondary-cta" href="#como-funciona">Cómo funciona {{icon arrow-right}}</a>
+        </div>
+      </div>
+
+      <div class="nfc-scene" id="nfc-scene">
+        <div class="scene-floor"></div>
+        <div class="hero-nfc-card" id="hero-card">
+          <div class="nfc-card-top"><span>TU PRÓXIMA CONEXIÓN</span>{{icon wifi 25}}</div>
+          {{logo light card-logo}}
+          <div class="nfc-card-bottom"><span>ACERCA. CONECTA.</span><span>NFC</span></div>
+          <div class="card-edge"></div>
+        </div>
+        <div class="signal-waves" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="phone" id="hero-phone">
+          <div class="phone-camera"></div>
+          <div class="phone-status"><span>9:41</span><span>••• ▰</span></div>
+          <div class="phone-screen">
+            <div class="phone-brand">{{logo}}</div>
+            <span class="phone-welcome">BIENVENIDO A TU MUNDO</span>
+            <h3>Una conexión.<br>Mil posibilidades.</h3>
+            <div class="phone-link">Descubre nuestro menú {{icon arrow-up-right 12}}</div>
+            <div class="phone-link">Déjanos una reseña {{icon arrow-up-right 12}}</div>
+            <div class="phone-link">Califica tu atención {{icon arrow-up-right 12}}</div>
+            <div class="phone-connected">{{icon check 12}} Conectado al instante</div>
+          </div>
+          <div class="phone-home"></div>
+        </div>
+        <div class="scene-label label-card"><span class="label-line"></span>Diseñada para destacar.</div>
+        <div class="scene-label label-phone">Un toque es todo lo que necesitas.<span class="label-line"></span></div>
+      </div>
+
+      <div class="hero-benefits"><span>{{icon smartphone}} iPhone y Android</span><span>{{icon wifi}} Sin apps</span><span>{{icon sparkles}} Hecha para tu marca</span></div>
+    </section>
+
+    <div class="intro-strip">
+      <div class="container strip-inner">
+        <p>Una nueva forma de conectar. <strong>Para negocios como el tuyo.</strong></p>
+        <div class="use-cases"><span>{{icon utensils}} Restaurantes</span><span>{{icon coffee}} Cafeterías</span><span>{{icon store}} Tiendas</span></div>
+      </div>
+    </div>
+
+    <section class="section container" id="servicios">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">CONEXIONES QUE HACEN LA DIFERENCIA</span><h2 class="section-title">Una tarjeta.<br>Muchas posibilidades.</h2></div>
+        <p>Elige cómo quieres conectar con tus clientes.<br>Nosotros hacemos que suceda.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-item reveal">
+          <a href="#ofertas" aria-label="Ver precios: Tarjeta de Reseñas" class="service-visual visual-reviews" data-tilt>
+            <div class="product-display product-reviews">
+              <div class="product-counter-base" aria-hidden="true"></div>
+              <img class="product-image product-front" src="{{img resenas}}" alt="Tarjeta TAPJR de reseñas: Valóranos en Google, cinco estrellas y Acerca tu celular aquí" width="{{img_w}}" height="{{img_h}}" loading="lazy">
+            </div>
+            <span class="visual-arrow">{{icon arrow-up-right 18}}</span>
+          </a>
+          <div class="service-copy"><span class="eyebrow">MÁS CONFIANZA</span><h3>Tarjeta de Reseñas</h3><p>Convierte una buena experiencia en una gran reseña. Un toque en el mostrador y tus clientes llegan directo a Google.</p><a href="#ofertas" class="service-price">Desde 75.000 Gs / und {{icon arrow-up-right 16}}</a></div>
+        </article>
+        <article class="service-item reveal" style="--d:.12s">
+          <a href="#ofertas" aria-label="Ver precios: Tarjeta para Menú" class="service-visual visual-menu" data-tilt>
+            <div class="product-display product-menu">
+              <img class="product-image product-front" src="{{img menu}}" alt="Tarjeta NFC negra de menú: MENÚ, Acerca tu celular aquí" width="{{img_w}}" height="{{img_h}}" loading="lazy">
+            </div>
+            <span class="visual-arrow">{{icon arrow-up-right 18}}</span>
+          </a>
+          <div class="service-copy"><span class="eyebrow">MENOS ESPERA</span><h3>Tarjeta para Menú</h3><p>Tu menú, siempre a la mano. Acercan el móvil en la mesa y descubren todo lo que tienes para ofrecer.</p><a href="#ofertas" class="service-price">Desde 75.000 Gs / und {{icon arrow-up-right 16}}</a></div>
+        </article>
+        <article class="service-item reveal" style="--d:.24s">
+          <a href="#ofertas" aria-label="Ver precios: Tarjeta para Meseros" class="service-visual visual-waiters" data-tilt>
+            <div class="product-display product-waiters">
+              <img class="product-image product-fan-back" src="{{img resenas}}" alt="" aria-hidden="true" width="{{img_w}}" height="{{img_h}}" loading="lazy">
+              <img class="product-image product-front" src="{{img resenas}}" alt="Tarjeta portátil de mesero para valorar la atención en Google, diseño TAPJR" width="{{img_w}}" height="{{img_h}}" loading="lazy">
+            </div>
+            <span class="visual-arrow">{{icon arrow-up-right 18}}</span>
+          </a>
+          <div class="service-copy"><span class="eyebrow">ATENCIÓN EN MESA</span><h3>Tarjeta para Meseros</h3><p>Cada mesero lleva su propia tarjeta. Al terminar la atención, el cliente la acerca con su celular y deja su reseña en Google en segundos.</p><a href="#ofertas" class="service-price">Desde 75.000 Gs / und {{icon arrow-up-right 16}}</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section how-section" id="como-funciona">
+      <div class="container">
+        <div class="center-heading reveal"><span class="eyebrow">ASÍ DE SIMPLE</span><h2 class="section-title">Tres pasos. Y estás conectado.</h2><p>Nos encargamos de la tecnología.<br>Tú te encargas de crear buenas experiencias.</p></div>
+        <div class="steps-grid">
+          <div class="step reveal"><div class="step-top"><span class="step-number">01</span><span class="step-line"></span>{{icon arrow-up-right 17}}</div><h3>Elige tu tarjeta</h3><p>Reseñas en caja, menú en mesas o tarjetas para meseros. Encuentra la tarjeta que mejor se adapta a tu negocio.</p></div>
+          <div class="step reveal" style="--d:.12s"><div class="step-top"><span class="step-number">02</span><span class="step-line"></span>{{icon arrow-up-right 17}}</div><h3>La configuramos</h3><p>Personalizamos el diseño con tu marca y conectamos el enlace que tú elijas.</p></div>
+          <div class="step reveal" style="--d:.24s"><div class="step-top"><span class="step-number">03</span><span class="step-line"></span>{{icon arrow-up-right 17}}</div><h3>Un toque. Listo.</h3><p>Tus clientes acercan el móvil a la tarjeta y llegan directo a tu contenido. Así de fácil.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="connection-ribbon" id="ribbon" aria-hidden="true">
+      <div class="ribbon-track" id="ribbon-track">{{ribbon}}</div>
+    </div>
+
+    <section class="section container" id="ofertas">
+      <div class="center-heading reveal"><span class="eyebrow">UNA PEQUEÑA INVERSIÓN. UN GRAN CAMBIO.</span><h2 class="section-title">Conecta más. Paga menos.</h2><p>Diseño personalizado y configuración incluidos.<br>Elige cuántas necesitas y dale un nuevo toque a tu negocio.</p></div>
+      <div class="configurator">
+        <div class="tier-scale reveal">
+          <div class="tier"><span>1–2 und</span><strong>150.000 Gs</strong><small>por unidad</small></div>
+          <div class="tier"><span>3–6 und</span><strong>125.000 Gs</strong><small>−17%</small></div>
+          <div class="tier"><span>7–14 und</span><strong>100.000 Gs</strong><small>−33%</small></div>
+          <div class="tier"><span>15+ und</span><strong>75.000 Gs</strong><small>−50%</small></div>
+        </div>
+        <div class="config-rows">
+          {{row reviews|Tarjeta de Reseñas|Tarjetas de Reseñas|Para la caja|resenas|1|0s}}
+          {{row menu|Tarjeta para Menú|Tarjetas para Menú|Para las mesas|menu|0|.08s}}
+          {{row waiters|Tarjeta para Meseros|Tarjetas para Meseros|Para cada mesero|resenas|0|.16s}}
+        </div>
+        <div class="config-summary reveal">
+          <div><span class="eyebrow">TU PEDIDO</span><ul id="summary-list"></ul></div>
+          <div class="summary-total"><small>Total general</small><strong id="grand-total">150.000 Gs</strong>
+            <a class="btn tap-button" id="order-all" target="_blank" rel="noopener noreferrer">{{icon message-circle}}Pedir todo por WhatsApp{{icon arrow-up-right}}</a>
+          </div>
+        </div>
+      </div>
+      <p class="pricing-note">Precios en guaraníes paraguayos. El precio por unidad se aplica a toda la cantidad de cada tipo de tarjeta.</p>
+    </section>
+
+    <section class="benefits-section">
+      <div class="container benefits-grid">
+        <div class="benefit reveal">{{icon smartphone}}<div><h3>Sin descargar apps</h3><p>Acerca el móvil y listo.</p></div></div>
+        <div class="benefit reveal" style="--d:.08s">{{icon shield-check}}<div><h3>iPhone y Android</h3><p>Compatible con móviles NFC.</p></div></div>
+        <div class="benefit reveal" style="--d:.16s">{{icon battery}}<div><h3>Sin baterías</h3><p>Siempre lista para conectar.</p></div></div>
+        <div class="benefit reveal" style="--d:.24s">{{icon paintbrush}}<div><h3>100% tu marca</h3><p>Un diseño hecho para ti.</p></div></div>
+      </div>
+    </section>
+
+    <section class="final-cta container" id="contacto">
+      <div class="reveal">
+        <span class="eyebrow">EL SIGUIENTE PASO ES UN TOQUE</span>
+        <h2 class="section-title">Tu negocio merece<br>estar conectado.</h2>
+        <p>Hagamos que cada encuentro se convierta en una oportunidad.</p>
+        <a class="btn tap-button" href="{{wa_info}}" target="_blank" rel="noopener noreferrer">{{icon message-circle}}Hablemos por WhatsApp{{icon arrow-up-right}}</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#inicio" aria-label="TAPJR, volver al inicio">{{logo}}</a>
+        <div class="footer-socials">
+          <a class="contact-link" href="{{wa_info}}" target="_blank" rel="noopener noreferrer">Conectemos</a>
+          <a class="footer-whatsapp" href="{{wa_info}}" target="_blank" rel="noopener noreferrer">{{icon message-circle}}0994 533 990</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 TAPJR. Todos los derechos reservados.</span><span>Diseñado para conectar. Hecho para ti.</span></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-fab" id="wa-fab" href="{{wa_info}}" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp" tabindex="-1">{{icon message-circle}}</a>
+</div>
+
+<script>
+{{lenis}}
+</script>
+<script>
+{{js}}
+</script>
+</body>
+</html>

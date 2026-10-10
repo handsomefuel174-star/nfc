@@ -25,6 +25,6 @@ function ServiceCard({ service, index }: { service: typeof services[number]; ind
       </div>
       <span className="visual-arrow"><ArrowUpRight size={18} /></span>
     </motion.a>
-    <div className="service-copy"><span className="eyebrow">{service.category}</span><h3>{service.title}</h3><p>{service.description}</p><a href="#ofertas" className="service-price">Desde $150.000 <ArrowUpRight size={16} /></a></div>
+    <div className="service-copy"><span className="eyebrow">{service.category}</span><h3>{service.title}</h3><p>{service.description}</p><a href="#ofertas" className="service-price">Desde 75.000 Gs / und <ArrowUpRight size={16} /></a></div>
   </motion.article>;
 }
